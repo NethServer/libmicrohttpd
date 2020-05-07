@@ -1,7 +1,7 @@
 Summary: Lightweight library for embedding a webserver in applications
 Name: libmicrohttpd
-Version: 0.9.33
-Release: 2%{?dist}
+Version: 0.9.59
+Release: 1%{?dist}
 Group: Development/Libraries
 License: LGPLv2+
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
@@ -117,11 +117,15 @@ fi
 %{_mandir}/man3/libmicrohttpd.3.gz
 %{_infodir}/libmicrohttpd.info.gz
 %{_infodir}/libmicrohttpd-tutorial.info.gz
+%{_infodir}/libmicrohttpd_performance_data.png.gz
 %doc AUTHORS README ChangeLog
 %doc examples
 %doc html
 
 %changelog
+* Thu May 7 2020 Alessandro Polidori <alessandro.polidori@nethesis.it> - 0.9.59-1
+- Upgrade to version 0.9.59 - NethServer/dev#6135
+
 * Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.9.33-2
 - Mass rebuild 2014-01-24
 
@@ -176,7 +180,7 @@ fi
 * Sun Nov 7 2010 Tim Niemueller <tim@niemueller.de> - 0.9.2-1
 - Update to 0.9.2
 
-* Sun Jun 4 2010 Erik van Pienbroek <epienbro@fedoraproject.org> - 0.4.6-1
+* Fri Jun 4 2010 Erik van Pienbroek <epienbro@fedoraproject.org> - 0.4.6-1
 - Update to 0.4.6
 
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.2-2
